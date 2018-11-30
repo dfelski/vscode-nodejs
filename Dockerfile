@@ -2,9 +2,6 @@ FROM ubuntu:18.04
 MAINTAINER Darius Felski
 LABEL Description="Visual Studio Code with latest NodeJS 8.x Version" Version="0.1.0"
 
-# ENV DEBIAN_FRONTEND=noninteractive
-# ENV TZ=Europe/Berlin
-
 # install some basics first
 RUN apt update && apt install -y software-properties-common apt-transport-https wget curl
 
@@ -25,7 +22,7 @@ ADD https://nodejs.org/dist/latest-v8.x/node-v8.14.0-linux-x64.tar.gz /tmp
 RUN cd /tmp && tar -xzf node-v8*.tar.gz -C /opt/nodejs/ --strip-components=1
 ENV PATH="/opt/nodejs/bin:${PATH}"
 
-# install some dependencies to run vscode gui first
+# install some dependencies to run vscode gui properly
 RUN apt install -y libasound2
 
 # install vscode

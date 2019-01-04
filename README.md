@@ -1,2 +1,2 @@
-# vscode-nodejs
-Docker image for Visual Studio Code with latest NodeJS 8.x Version
+# Visual Studio Code with NodeJS v8.x
+Docker image for Visual Studio Code with NodeJS v8.15.0

@@ -1,2 +1,2 @@
-# Visual Studio Code with NodeJS v8.x
-Docker image for Visual Studio Code with NodeJS v8.15.0
+# Visual Studio Code with with preinstalled Node Version Manager
+Docker image for Visual Studio Code with preinstalled Node Version Manager
